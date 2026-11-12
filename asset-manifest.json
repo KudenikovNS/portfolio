@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.d22427ec.css",
+    "main.js": "/portfolio/static/js/main.220c8ca7.js",
+    "static/media/mycircus.jpg": "/portfolio/static/media/mycircus.41c5340ce1dc73aecce9.jpg",
+    "static/media/virin-tradeoutlook.png": "/portfolio/static/media/virin-tradeoutlook.7fb395e602a402c9ad10.png",
+    "static/media/dashboard.jpg": "/portfolio/static/media/dashboard.de9ba163b67aeb57f20d.jpg",
+    "static/media/lemurrr.jpg": "/portfolio/static/media/lemurrr.f4d86b979e1df1795272.jpg",
+    "static/media/wowhunt.jpg": "/portfolio/static/media/wowhunt.bbba3f61aca438b44455.jpg",
+    "static/media/ai-datalens.png": "/portfolio/static/media/ai-datalens.dc61fe977f150628f91b.png",
+    "static/media/climatise-global.png": "/portfolio/static/media/climatise-global.400184536a51f6a8f18a.png",
+    "static/media/virin.jpg": "/portfolio/static/media/virin.a3363937e38e6efecd90.jpg",
+    "static/media/drive-click-bank.jpg": "/portfolio/static/media/drive-click-bank.6036edc9cd8cff18f830.jpg",
+    "static/media/boostdealers.jpg": "/portfolio/static/media/boostdealers.677bf804139e024953d0.jpg",
+    "static/media/avatar.jpg": "/portfolio/static/media/avatar.fec9f74d5c05a4e781ea.jpg",
+    "static/media/climatise-slovenia.png": "/portfolio/static/media/climatise-slovenia.874bef289d95a753203e.png",
+    "static/media/wheel-of-fortune.jpg": "/portfolio/static/media/wheel-of-fortune.5478c885dd9ae995b8b2.jpg",
+    "static/media/weather.jpg": "/portfolio/static/media/weather.c254c40f0b56af4ad095.jpg",
+    "static/media/fairy-forest-parallax.jpg": "/portfolio/static/media/fairy-forest-parallax.3223ab4322e8c41e19d9.jpg",
+    "static/media/kingboost.jpg": "/portfolio/static/media/kingboost.0b267c3e3d0a2f5561a2.jpg",
+    "static/media/cta-background.webp": "/portfolio/static/media/cta-background.0f96aba50eca261fbdad.webp",
+    "static/media/mini-game.jpg": "/portfolio/static/media/mini-game.4b91487513864f8c2056.jpg",
+    "static/media/game-of-circles.jpg": "/portfolio/static/media/game-of-circles.2f20014ec9fba5a418e0.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.d22427ec.css.map": "/portfolio/static/css/main.d22427ec.css.map",
+    "main.220c8ca7.js.map": "/portfolio/static/js/main.220c8ca7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d22427ec.css",
+    "static/js/main.220c8ca7.js"
+  ]
+}
