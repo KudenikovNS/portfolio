@@ -5,6 +5,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import styles from "./ProjectCarousel.module.css";
 import {ProjectCard} from "../ProjectCard/ProjectCard";
+import type {Project} from "../../types/content";
+
+interface ProjectCarouselProps {
+    projects: Project[];
+    showStackLabel?: boolean;
+}
 
 const COVERFLOW_EFFECT = {
     rotate: 50,
@@ -15,7 +21,7 @@ const COVERFLOW_EFFECT = {
 };
 
 // 3D coverflow carousel of project cards
-export function ProjectCarousel({projects, showStackLabel = false}) {
+export function ProjectCarousel({projects, showStackLabel = false}: ProjectCarouselProps) {
     return (
         <div className={styles.carousel}>
             <Fade bottom>

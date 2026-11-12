@@ -8,9 +8,10 @@ import {
     faScrewdriverWrench,
     faRobot,
 } from "@fortawesome/free-solid-svg-icons";
+import type {SkillGroup} from "../types/content";
 
 // Grouped from the CV. Each group renders as a card with its skills as chips.
-export const SKILL_GROUPS = [
+export const SKILL_GROUPS: SkillGroup[] = [
     {
         icon: faCode,
         name: "Languages",

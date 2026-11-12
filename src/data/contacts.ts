@@ -1,5 +1,6 @@
-// `href` is optional: entries without it render as plain text.
-export const CONTACTS = [
+import type {Contact} from "../types/content";
+
+export const CONTACTS: Contact[] = [
     {label: "Location", value: "Slovenia"},
     {label: "Telegram", value: "@nik_kudenik", href: "https://t.me/nik_kudenik"},
     {label: "Phone", value: "+38640371795", href: "tel:+38640371795"},

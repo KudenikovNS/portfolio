@@ -15,14 +15,10 @@ import lemurrr from "../assets/projects/lemurrr.jpg";
 import weather from "../assets/projects/weather.jpg";
 import gameOfCircles from "../assets/projects/game-of-circles.jpg";
 import miniGame from "../assets/projects/mini-game.jpg";
+import type {Project} from "../types/content";
 
-/**
- * kind:        "commercial" — production sites, "demo" — pet / showcase projects
- * description: one paragraph, always phrased as "<Name> is ..."
- * stack:       comma-separated technologies
- * Ordered newest first.
- */
-export const PROJECTS = [
+// Ordered newest first. Field meanings are documented on the Project type.
+export const PROJECTS: Project[] = [
     {
         kind: "demo",
         name: "AI DataLens",

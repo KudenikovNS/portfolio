@@ -8,8 +8,10 @@ import styles from "./Hero.module.css";
 import {PARTICLES_CONFIG} from "./particlesConfig";
 import {SECTION_IDS} from "../../data/navigation";
 
+type ParticlesEngine = Parameters<typeof loadFull>[0];
+
 export function Hero() {
-    const initParticles = useCallback(async (engine) => {
+    const initParticles = useCallback(async (engine: ParticlesEngine) => {
         await loadFull(engine);
     }, []);
 

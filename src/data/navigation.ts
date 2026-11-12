@@ -1,12 +1,13 @@
-// `target` is the id of the section the link scrolls to.
+import type {NavItem} from "../types/content";
+
 export const SECTION_IDS = {
     hero: "home",
     expertise: "skills",
     portfolio: "projects",
     contact: "contact",
-};
+} as const;
 
-export const NAV_ITEMS = [
+export const NAV_ITEMS: NavItem[] = [
     {target: SECTION_IDS.hero, label: "Home"},
     {target: SECTION_IDS.expertise, label: "Expertises"},
     {target: SECTION_IDS.portfolio, label: "Projects"},
@@ -18,4 +19,4 @@ export const SCROLL_OPTIONS = {
     duration: 500,
     spy: true,
     smooth: true,
-};
+} as const;

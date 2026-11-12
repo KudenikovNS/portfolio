@@ -1,5 +1,10 @@
+import type {ComponentProps} from "react";
+import type Particles from "react-particles";
+
+type ParticlesOptions = ComponentProps<typeof Particles>["options"];
+
 // Floating connected dots behind the hero section (tsparticles options)
-export const PARTICLES_CONFIG = {
+export const PARTICLES_CONFIG: ParticlesOptions = {
     fullScreen: {enable: true},
     fpsLimit: 120,
     interactivity: {
@@ -19,7 +24,7 @@ export const PARTICLES_CONFIG = {
         },
         collisions: {enable: true},
         move: {
-            directions: "none",
+            direction: "none",
             enable: true,
             outModes: {default: "bounce"},
             random: false,

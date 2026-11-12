@@ -1,7 +1,14 @@
 import styles from "./ProjectCard.module.css";
 import {LinkButton} from "../ui/LinkButton/LinkButton";
+import type {Project} from "../../types/content";
 
-export function ProjectCard({project, showStackLabel}) {
+interface ProjectCardProps {
+    project: Project;
+    /** Prefix the stack with "Stack:" (used for commercial projects) */
+    showStackLabel?: boolean;
+}
+
+export function ProjectCard({project, showStackLabel = false}: ProjectCardProps) {
     const {name, image, description, stack, liveUrl, repoUrl} = project;
 
     return (
