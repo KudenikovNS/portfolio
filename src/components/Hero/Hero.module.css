@@ -1,0 +1,166 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  background-color: var(--color-bg);
+}
+
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* ---------- Intro text ---------- */
+
+.intro {
+  position: relative;
+  min-width: 300px;
+  font: 400 16px/1.8 var(--font-heading);
+  color: var(--color-text);
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  width: 100%;
+  height: 1px;
+  background-image: var(--divider);
+}
+
+/* Applies to the greeting and to the spans rendered by ReactTypingEffect */
+.intro span {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* Third child = the typing-effect line */
+.intro span:nth-child(3) {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.intro span:nth-child(3) span {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.name {
+  display: block;
+  margin: 0;
+  font-size: 11vh;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+/* Two classes so it beats the generic `.intro span` rule */
+.intro .lastName {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: none;
+}
+
+/* Accent highlight behind the last name */
+.lastName::before {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  z-index: -1;
+  width: 100%;
+  height: 10px;
+  background-color: var(--color-accent);
+}
+
+/* ---------- Portrait ---------- */
+
+.portrait {
+  position: relative;
+  z-index: 1;
+}
+
+.photo {
+  width: 300px;
+  height: 400px;
+  background-image: url('../../assets/images/avatar.jpg');
+  background-color: var(--color-bg-alt);
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+/* Offset accent border behind the photo */
+.frame {
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  z-index: -1;
+  width: 105%;
+  height: 110%;
+  border: 5px solid var(--color-accent);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (min-width: 1143px) {
+  .lastName::before {
+    bottom: 22px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 1143px) {
+  .intro span {
+    font-size: 16px;
+  }
+
+  .intro span:nth-child(3) {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .name {
+    font-size: 8vh;
+  }
+
+  .portrait {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 861px) {
+  .intro {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .photo {
+    width: 260px;
+    height: 360px;
+    transition: .5s;
+  }
+}

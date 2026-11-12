@@ -1,0 +1,26 @@
+.footer {
+  position: relative;
+  padding: 30px 0;
+  font: 400 16px/1.8 var(--font-heading);
+  background-color: var(--color-bg-alt);
+}
+
+/* Divider along the top edge of the footer */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background-image: var(--divider);
+}
+
+.copyright {
+  margin: 1em auto;
+  width: 80%;
+  font-family: var(--font-body);
+  text-align: center;
+  color: var(--color-text-dim);
+}
