@@ -1,3 +1,56 @@
+/* Arrows on the sides, carousel track in the middle */
 .carousel {
+  display: flex;
+  align-items: center;
+  gap: 16px;
   width: 100%;
+}
+
+.track {
+  flex: 1;
+  /* Lets Swiper shrink inside the flex row instead of overflowing it */
+  min-width: 0;
+}
+
+.arrow {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  font-size: 16px;
+  color: var(--color-text);
+  background: transparent;
+  border: 2px solid var(--color-text);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.arrow:hover:not(:disabled) {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+/* First / last slide reached */
+.arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/*
+ * Equal card height within one carousel: slides stretch to the tallest one
+ * (Swiper sets height: 100% by default, which does not stretch).
+ */
+.track :global(.swiper-slide) {
+  height: auto;
+}
+
+/* On phones there is no room for arrows; swiping and dots are enough */
+@media (max-width: 600px) {
+  .arrow {
+    display: none;
+  }
 }

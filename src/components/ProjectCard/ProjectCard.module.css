@@ -4,6 +4,8 @@
   align-items: flex-start;
   width: 100%;
   max-width: 450px;
+  /* Fill the slide so all cards in a carousel share the tallest height */
+  height: calc(100% - 20px);
   margin: 0 0 20px 0;
   font: 400 16px/1.8 var(--font-heading);
   background-color: rgba(30, 30, 30, .6);

@@ -29,6 +29,10 @@ body {
 
 /* Swiper overrides (Swiper renders its own global class names) */
 .swiper {
+  /* Inactive pagination dots: white instead of the default black, which is invisible on the dark background */
+  --swiper-pagination-bullet-inactive-color: var(--color-text);
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
+
   width: 100%;
   height: 100%;
   padding-top: 50px;
