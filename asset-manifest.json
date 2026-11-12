@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.375e343b.css",
-    "main.js": "/portfolio/static/js/main.220c8ca7.js",
+    "main.css": "/portfolio/static/css/main.bb8b4167.css",
+    "main.js": "/portfolio/static/js/main.dbba8fc8.js",
     "static/media/mycircus.jpg": "/portfolio/static/media/mycircus.41c5340ce1dc73aecce9.jpg",
     "static/media/virin-tradeoutlook.png": "/portfolio/static/media/virin-tradeoutlook.7fb395e602a402c9ad10.png",
     "static/media/dashboard.jpg": "/portfolio/static/media/dashboard.de9ba163b67aeb57f20d.jpg",
@@ -22,11 +22,11 @@
     "static/media/mini-game.jpg": "/portfolio/static/media/mini-game.4b91487513864f8c2056.jpg",
     "static/media/game-of-circles.jpg": "/portfolio/static/media/game-of-circles.2f20014ec9fba5a418e0.jpg",
     "index.html": "/portfolio/index.html",
-    "main.375e343b.css.map": "/portfolio/static/css/main.375e343b.css.map",
-    "main.220c8ca7.js.map": "/portfolio/static/js/main.220c8ca7.js.map"
+    "main.bb8b4167.css.map": "/portfolio/static/css/main.bb8b4167.css.map",
+    "main.dbba8fc8.js.map": "/portfolio/static/js/main.dbba8fc8.js.map"
   },
   "entrypoints": [
-    "static/css/main.375e343b.css",
-    "static/js/main.220c8ca7.js"
+    "static/css/main.bb8b4167.css",
+    "static/js/main.dbba8fc8.js"
   ]
 }
