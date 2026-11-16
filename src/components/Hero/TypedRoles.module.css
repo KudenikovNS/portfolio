@@ -1,0 +1,64 @@
+/* Font size lives here so the divider can measure one line as 1.8em (line-height) */
+.roles {
+  position: relative;
+  font-size: 28px;
+}
+
+/* Divider under the last shown line; slides down when the next line starts */
+.roles::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  height: 1px;
+  background-image: var(--divider);
+  transform: translateY(calc(var(--hidden-lines, 0) * -1.8em));
+  transition: transform 0.4s ease;
+}
+
+.line {
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  font-weight: 300;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1143px) {
+  .roles {
+    font-size: 20px;
+  }
+
+  .line {
+    letter-spacing: 2px;
+  }
+}
+
+/* Phones: scale with the screen so each role stays on a single line */
+@media (max-width: 600px) {
+  .roles {
+    font-size: min(20px, 4.4vw);
+  }
+
+  /* Divider closer to the text on small screens */
+  .roles::after {
+    bottom: -16px;
+  }
+
+  .line {
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+}

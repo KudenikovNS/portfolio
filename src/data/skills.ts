@@ -20,7 +20,7 @@ export const SKILL_GROUPS: SkillGroup[] = [
     {
         icon: faServer,
         name: "Backend & Data",
-        skills: ["Node.js", "Express.js", "Laravel", "PostgreSQL", "MySQL", "MongoDB", "REST API", "WebSocket"],
+        skills: ["Node.js", "Express.js", "Laravel", "PostgreSQL", "MySQL", "MongoDB", "Redis", "REST API", "WebSocket"],
     },
     {
         icon: faLaptopCode,
@@ -41,11 +41,11 @@ export const SKILL_GROUPS: SkillGroup[] = [
         ],
     },
     {
-        icon: faPalette,
-        name: "Layout & UI",
+        icon: faScrewdriverWrench,
+        name: "Tools",
         skills: [
-            "HTML5", "CSS3", "SASS/SCSS", "CSS-in-JS", "Tailwind", "MUI", "Responsive Design",
-            "Pixel Perfect", "UI/UX Best Practices",
+            "GitHub", "Jira", "Vite", "Webpack", "Babel", "Gulp", "ESLint", "Stylelint", "Prettier",
+            "Husky", "Storybook", "Postman", "Figma",
         ],
     },
     {
@@ -56,14 +56,14 @@ export const SKILL_GROUPS: SkillGroup[] = [
     {
         icon: faVial,
         name: "CI/CD & Testing",
-        skills: ["GitHub Actions", "Docker", "Playwright", "Jest", "React Testing Library"],
+        skills: ["GitHub Actions", "Docker", "Kubernetes", "Playwright", "Jest", "React Testing Library"],
     },
     {
-        icon: faScrewdriverWrench,
-        name: "Tools",
+        icon: faPalette,
+        name: "Layout & UI",
         skills: [
-            "GitHub", "Jira", "Vite", "Webpack", "Babel", "Gulp", "ESLint", "Stylelint", "Prettier",
-            "Husky", "Storybook", "Postman", "Figma",
+            "HTML5", "CSS3", "SASS/SCSS", "CSS-in-JS", "Tailwind", "MUI", "Responsive Design",
+            "Pixel Perfect", "UI/UX Best Practices",
         ],
     },
 ];
